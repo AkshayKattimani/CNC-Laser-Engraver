@@ -1,0 +1,1954 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}% http://ctan.org/pkg/fancyhdr
+\fancyhead{}% Clear all headers
+%\fancyfoot{}% Clear all footers
+\renewcommand{\headrulewidth}{0.4pt}% Remove header rule
+\renewcommand{\footrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0pt}% Remove footer rule
+\pagestyle{fancy}% Set page style to "fancy"
+\usepackage{colortbl}
+\usepackage{multirow} 
+\usepackage[table]{xcolor}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Right Header
+Laser Engraver
+\end_layout
+
+\begin_layout Abstract
+Basically in laser engraving the laser beam burns the top layer of the surface
+ to be engraved.
+ The burnt area is left uncolored which makes it appear different from the
+ surrounding surface.
+ While in laser cutting laser beam has to penetrate through the surface.
+ This can be achieved by prolonging the beam on a particular area for a
+ long period of time, duration being decided on the strength of material
+ to be cut.
+ We are still collecting data from different resources to know this topic
+ more in depth.
+ 
+\end_layout
+
+\begin_layout Abstract
+In our project we have decided to develop working model of 2-axis laser
+ cutting and engraving machine.
+ It can cut out paper patterns and thermoplastic sheets to produce desired
+ shape and patterns.
+ We have collected information on laser cutting, laser and what engraving
+ is.
+ Laser cutting is different from laser engraving, in case of engraving very
+ low intensity laser torch is used as compared to laser cutting.
+ It might not cut through chunks(i.e thickness of 6,8mm or more) of wood
+ but surely burn the top layer.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+INTRODUCTION
+\end_layout
+
+\begin_layout Standard
+Laser stands for Light Amplification by Stimulated Emission of Radiation,
+ was discovered in 1960.
+ Laser light beam is different from normal light beam because of its high
+ temporal and narrow spectral bandwidth.
+ Here amplification of light is achieved by a laser active medium (gain
+ medium).
+ This medium is obtained by stimulated emission of photons from a lower
+ energy state to a higher energy state previously populated by a pump source.
+ In order to start the lasing active in the medium it must be in non thermal
+ energy distribution known as population inversion.
+ Wavelength of photon is changed according to the need of active medium.
+ The wavelength represents the colour and the amount of energy stored.
+ It is important to feed back the generated photon into the active medium
+ using a resonator, so that a large amount of identical photons builds up
+ for further stimulated emission.
+ 
+\end_layout
+
+\begin_layout Standard
+Pumping action is required which ensures continuous feeding of energy into
+ the laser active medium.
+ This helps in sufficient emission is generated on a continuous basis.
+ Lasers are classified into different ways i.e.
+ according to their mode of operation or type of laser-active medium.
+ Laser diodes are made by sandwiching negatively(n-type) semiconductor with
+ positively(ptype) semiconductor.
+ The laser beam generated is only in boundary layer of the forward biased
+ semiconductor diode.
+ This layer is only few micrometres in size, mirrors are fixed to make very
+ compact diodes.
+ Different colours of diode can be made by varying the choice of semiconductor
+ and the dopant used.
+ In p-type and n-type semiconductor the major component is gallium arsenite[1].
+ 
+\end_layout
+
+\begin_layout Standard
+Laser cutting It has been long since the first diode application for material
+ processing was as soldering a 15W medical diode laser.
+ Now it has reached a considerable height as compared those days.
+ The advantages of high-power diodes are its compactness, lifetime runtime,
+ The characteristics of high-power diode lasers which help it to stand out
+ from other types of lasers are its wavelength, laser power, energy efficiency,
+ beam formation, beam divergence and asymmetry.
+ 
+\end_layout
+
+\begin_layout Chapter
+MOTIVATION AND OBJECTIVES
+\end_layout
+
+\begin_layout Standard
+With increase in rapid prototyping and 3D printing techniques, it has become
+ mandatory for every industry to have one of the prototyping techniques
+ in its laboratory for better presentation of its idea in realistic form.
+ In laboratories every engineers need to present his thoughts and the various
+ projects that he /she undertakes to take a solid form so that he/she can
+ get into more of its detail and specification.
+ The large laser cutting machines makes it impossible for a student engineer
+ to utilize the machine for any purpose suitable for small hand held projects.
+ In case of 3D printing the cost of producing a model is considerably high
+ as compared to daily use.
+ So to make it possible for every student and any person for easy and low
+ cost usage this small laser cutting and engraving machine can be to great
+ use.
+ 
+\end_layout
+
+\begin_layout Chapter
+LITERATURE SURVEY
+\end_layout
+
+\begin_layout Standard
+[1]Design and fabrication of portable laser cutting and engraving machine
+ (December 2017) Authors: P.
+ Jamaleshwara Kumar, A.
+ Siva Sai Tarun, M.Gowtham.
+\end_layout
+
+\begin_layout Standard
+Theme of the paper a) Decrease the extensive scale mechanical slicing machine
+ to a little convenient lab hardware.
+ b) Diminish the cost of making models.
+ c) Usable for cutting paper, polystyrene and thin sheets, wood etc.
+ d) Portable Machine.
+ 
+\end_layout
+
+\begin_layout Standard
+In this paper the fundamental goal is to design and fabricate the laser
+ cutting and engraving machine which is convenient to controlled by the
+ Arduino CNC.
+ It is accessible and perfect utilization for small and medium scale industries.
+ This model is small, simple to work, cost of manufacturing and to effortlessly
+ transport from one work station to other work station.
+\end_layout
+
+\begin_layout Standard
+[2]Leone C, Lopresto V, De Iorio I (2009)Wood engraving by Q-switched diode-pump
+ed frequencydoubled Nd: YAG green laser.
+ Optics and Lasers in Engineering 47 (1):161-168.
+ 
+\end_layout
+
+\begin_layout Standard
+Traditional etched engraving has been done for long time, which is by etching
+ or carving a personal message on the ring’s surface.
+ It typically is performed using a needle and literally carving into the
+ surface.
+ Etched graving can be performed on tungsten wedding bands if a diamond
+ tipped needle is used.
+ Diamonds are the hardest substance on earth.
+ Modern CNC engraving Physical force need to be applied to the material
+ and require multiple passes to cut thick material.
+ Where as laser is able to cut thick material in one pass without physical
+ contact.
+ 
+\end_layout
+
+\begin_layout Standard
+CNC Mill requires the user to clamp the work piece, clean and polish / post
+ process the item before getting to the end product.
+ Whrere in laser engraver we don’t require these process.
+ These laser engraving techniques are faster, efficiant and require less
+ processing cost then the cnc wngraver, whichare slower and require post
+ processing i.e fixing material and vacuum preparation, edge post processing,
+ tool head.
+ 
+\end_layout
+
+\begin_layout Standard
+[3]Caristan CL (2004) Laser cutting guide for manufacturing.
+ Society of manufacturing engineers.
+ page 198-221 
+\end_layout
+
+\begin_layout Standard
+The cutting means contains a laser, and then again a collimator, mounted
+ in a settled edge for conveying a static laser shaft that is focussed onto
+ the sheet material as it disregards a tubular roller.
+ 
+\end_layout
+
+\begin_layout Standard
+The cutting sample is controlled by an assistant head which mounts reflecting
+ and focussing means and is flexible longitudinally parallel to the material
+ support suggests for moving the inside motivation behind the column longitudina
+lly of the material reinforce infers in synchronism with improvement of
+ the material under the control of bi-directional material nourishment infers.
+ In a favoured alteration, an optical sensor is mounted on the helper head
+ for seeing stamps on the sheet material, the yield of the optical sensor
+ being sent to a control PC which has a yield mode and a cut mode.
+\end_layout
+
+\begin_layout Standard
+The yield technique for the PC is specialists to prompt the associate head
+ and the bidirectional sustenance infers in synchronism while the laser
+ is murdered, so that the optical sensor inspects the shape or sample on
+ the sheet material.
+ The delayed consequences of the yield are taken care of in the PC to construct,
+ in the PC memory, a fancied cutting route composed to the shape or illustration
+ on the sheet material; and the cut system for the PC is specialists to
+ enact the helper head and the bi-directional nourishment suggests in synchronis
+m while the laser is ordered, to cut the looked for instance in the sheet
+ material along the needed cutting way.
+\end_layout
+
+\begin_layout Standard
+[4]Design and Development of laser Engraving and Cutting Robotic Machine
+ Integrate-able with Nd-Yag Laser Device (December 2017)
+\end_layout
+
+\begin_layout Standard
+Laser Machine System that is accessible to add-on Nd-Yag Laser Device.
+ The deliberate mechanical design and the path of laser beam entering the
+ machine and exiting the laser-head with intended electronics control structure
+ controlled by CNC software is developed.
+ The designed CNC Nd-Yag laser Machine is a teaching tool for workshop and
+ is targeted to perform laser cutting and suitable engraving or welding
+ tasks for small and medium scale industries.
+ By testing the machine its expected positional accuracy was achieved and
+ the control mechanism for Nd-Yag laser path reflection function was successfull
+y tested.
+ 
+\end_layout
+
+\begin_layout Standard
+The machining technologies and modern intelligent systems are expensive
+ and require easy handling and integrated-able machine with various devices
+ to perform multiple machining tasks.
+ Computer Numerically Controlled (CNC) machines are accessible by manufacturers
+ to perform several machining tasks due to effectiveness in handling accuracy.
+ The majority of CNC machines are costly due to it complex but efficient
+ machine and software design.
+ 
+\end_layout
+
+\begin_layout Chapter
+PROJECT REQUIREMENTS AND SPECIFICATION
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sl.No.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Components
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Specification
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Laser Diode
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+450nm 5W Laser Engraving Module Blue Light With TTL Modulation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arduino Uno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arduino Un R3 ATmega328P
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stepper motor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nema 17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motor Driver
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A4988 Driver
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power Supply (12V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input100-240V / 50-60Hz/ 600mA 2.
+ Output 12V-1,5A 6 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V-Slots and Wheels
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2060 V slot aluminum profile
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Laser diode
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (5).png
+	scale 40
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Laser diode(450nm 5W Laser Engraving Module Blue Light With TTL Modulation)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Features: 
+\end_layout
+
+\begin_layout Enumerate
+Can be used for laser cutting machine, laser engraving machine, CNC, DIY
+ laser.
+ 
+\end_layout
+
+\begin_layout Enumerate
+.
+ Make of Aluminum material,durable and solid,Adjustable focal length.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Aircraft aluminum TTL driver board with cooling fan ensure long working
+ time continuously.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Can carving MDF, balsa, paper, wood, fabric, plastic, leather, plywood,
+ foam paper, anodized aluminum, etc.(Not suitable for iron or other metal)
+ 
+\end_layout
+
+\begin_layout Subsection
+Arduino Uno
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (9).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arduino Uno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Features: 
+\end_layout
+
+\begin_layout Enumerate
+Microcontroller ATmega328P 
+\end_layout
+
+\begin_layout Enumerate
+Operating Voltage : 5V 
+\end_layout
+
+\begin_layout Enumerate
+Digital I/O Pins 14 (of which 6 provide PWM output) PWM Digital I/O Pins
+ 6 Analog Input Pins 6 Flash Memory 32 KB (ATmega328P) of which 0.5 KB
+\end_layout
+
+\begin_layout Subsection
+Stepper Motor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (11).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Stepper Motor Nema 17
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Features: 
+\end_layout
+
+\begin_layout Enumerate
+Voltage : 3-6 V 
+\end_layout
+
+\begin_layout Enumerate
+Torque : 4.2 Kg-cm 
+\end_layout
+
+\begin_layout Enumerate
+Step Angle: 1.8 deg / step Shaft Diameter: 5mm 
+\end_layout
+
+\begin_layout Enumerate
+Shaft Length: 10mm Gear OD: 21 
+\end_layout
+
+\begin_layout Enumerate
+Teeth: 19 
+\end_layout
+
+\begin_layout Enumerate
+Thickness: 6mm 
+\end_layout
+
+\begin_layout Enumerate
+Material: Metal Package Include 1 x Nema 17 Stepper Motor
+\end_layout
+
+\begin_layout Subsection
+Motor Driver
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (13).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CNC Motor driver
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Description: The extension board can be used for carving machine, 3 d printer
+ driver expansion board A total of 4 way of stepping motor driver module
+ slot, can not into the motor drive 4 road, and every step motor all the
+ way only need two IO mouth, that is to say, 6 IO mouth can be very good
+ management three stepper motor, use rise very convenient Body Size : 68
+ x 53 x 18mm/2.7 x 2.1 x 0.7 (L*W*T) Material : Plastic, Electronic Part Package
+ Includes: 1x CNC Shield A4988 Driver Expansion Board(Non-OEM) Note: When
+ inserting the A4988 module, must be careful not to insert opposite.
+ Stepper motor wiring as follows: 2A, 2B is a group (red, green), 1A, 1B
+ is a group (blue, yellow), if want to change direction, can be change the
+ position of one group , for example 2A, 2B mutually exchanged.
+\end_layout
+
+\begin_layout Subsection
+Power Supply (12V)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (15).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Power Supply (12V)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Features: 
+\end_layout
+
+\begin_layout Enumerate
+Input100-240V / 50-60Hz/ 600mA 
+\end_layout
+
+\begin_layout Enumerate
+Output 12V-1,5A
+\end_layout
+
+\begin_layout Subsection
+V-Slots and Wheels
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (17).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+V-Slots and Wheels
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Features: 
+\end_layout
+
+\begin_layout Enumerate
+Black surface treatment and durable.
+ 
+\end_layout
+
+\begin_layout Enumerate
+2060 V slot aluminum profile can work as same as T slot aluminum profile,
+ all T slot accessories(such as T nuts) can fit V slot aluminum profile.
+ 
+\end_layout
+
+\begin_layout Enumerate
+2060 V slot aluminum profile support linear motion, you can build such as
+ 3d printer and so on.
+ 
+\end_layout
+
+\begin_layout Enumerate
+2060 V slot aluminum profile extrusions are perfect for custom machine frames,
+ workstations, prototyping, guarding and many more purposes.
+\end_layout
+
+\begin_layout Chapter
+METHODOLOGY
+\end_layout
+
+\begin_layout Standard
+The laser engraving is constructed in three stages i.e build mechanical frame,
+ assemble electric system and software install control and computing system.
+ Mechanical system gets necessary control signals from electronics system
+ which ultimately results in desired actuation of motors.
+ Electronics system gets command or a set of commands from software system
+ and generates controls for mechanical system.
+\end_layout
+
+\begin_layout Section
+BLOCK DIAGRAM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (24).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Block diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A CNC machine is a computer controlled carving machine.
+ It generally speaking reads G Code that instructs the machine how to move,
+ what feedrate and spindle speed to use, which cutting tool should be in
+ the spindle, etc.
+ The cutter that the machine has laser will engrave and create the intended
+ shape.
+ The material that has been removed is called "chips" and it will usually
+ be recycled.
+ 
+\end_layout
+
+\begin_layout Standard
+In most cases a CNC machine is programmed by a programmer using CAM software
+ who uses the software to apply tool paths to a 3D or 2D model of the part
+ they want to make.
+ Once the programmer has finished his/her programming work, the program
+ is fed into a post processor which will turn the CAM program into the G
+ code the machine can read.
+ The G code is uploaded into a the CNC machine along with all the cutting
+ tools needed, raw material and work holding needed to hold the raw material.
+ Then a machinist will put the machine into automatic mode and start the
+ program to make the part.
+ Arduino is an open-source electronics platform based on easy-to-use hardware
+ and software.
+ Arduino boards are able to read inputs - from g-codes , activating a motor
+ through motor driver IC.
+ stepper motors x and y axis are controlled by motor driver and gives the
+ path for laser module to engrave.
+ 
+\end_layout
+
+\begin_layout Standard
+The product is aimed for students, engineers and as well as common people.
+ The product is designed as low cost easy maintenance lab equipment.
+ The mechanism is kept simple so that even the common man can use the machine
+ with full comfort, effectiveness and safety.
+ The machine being small and portable it can be moved and setup at any place
+ where the user wants.
+ 
+\end_layout
+
+\begin_layout Section
+Design
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename WhatsApp Image 2020-08-05 at 12.00.02 PM.jpeg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+2-axis laser engraver
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figures 5.2 shows the machine design, design has an aluminum profile i.e custom
+ V-slot i.e 20x30mm on axis and 20x20mm on X-axis, aluminum matching rolling
+ bearing.Y-axis dual motor, using NEMA 17 stepper motors,
+\end_layout
+
+\begin_layout Standard
+The mechanical system is assembled in such a way that the 2- axis movement
+ is achieved by using the linear bearings and guide rods.
+ Stepper motors are mounted to the y-axis which is the source of motion
+ acted according to the control signal generated from the electronics circuit.
+ both stepper motor is coupled to the screw rod which carries nut with the
+ help of coupling bush.
+ This screw rod and nut arrangement is responsible for converting the rotational
+ motion of the stepper motor to linear motion.
+\end_layout
+
+\begin_layout Standard
+The linear motion of each axis is carried away smoothly by the linear bearing
+ and guide rod assembly connected to the each axis which is capable of load
+ carriers and allows linear motion in each axis.
+ The controlled motion in each axis is achieved directly by controlling
+ the rota- tion of the stepper motor.
+ The speed of the motion in each axis can also be controlled by direct control
+ of the speed of the stepper motor by giving required control signals.
+ Thus the tool path of the spindle fixed to the end effector is controlled
+ in each axis for smooth carving or cutting action of work piece.
+ laser diode is attached on the X-axis with pully.
+ there is no limit to the size and height of the engraving object, hence
+ the work-space can be variable .
+ you can directly put or mount the machine on it.
+ 
+\end_layout
+
+\begin_layout Section
+CNC/Stepper Motor Shield for Arduino
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (45).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Micro-stepping jumper location, before inserting A4988
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the tables below High indicates that a jumper is insert and Low indicates
+ that no jumper is inserted
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (47).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Config table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After setting the microstep jumper, you can plug-in A4988 driver boards
+ as shown in the photo below.
+ The photo also shown this CNC sit nicely on top of Arduino Uno board, without
+ any external jumper wires.
+ 
+\end_layout
+
+\begin_layout Standard
+!!! Beware of the orientation of the A4988 driver boards! You will destroy
+ the A4988 driver board if plug-in with wrong orientation.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Before you can use this CNC shield with Arduino, a control firmware need
+ to be downloaded into Arduino board.
+ We are going to use GRBL to accomplish our job.
+ GRBL is open-source software that runs on an Arduino Uno that takes G-Code
+ commands via Serial and turns the commands into motor signals.
+ Grbl is a no-compromise, high performance, low cost alternative to parallel-por
+t-based motion control for CNC machine.
+ It accepts standards-compliant g-code and has been tested with the output
+ of several CAM tools with no problems.
+ Arcs, circles and helical motion are fully supported, as well as, all other
+ primary g-code commands.
+ Macro functions, variables, and most canned cycles are not supported, but
+ we think GUIs can do a much better job at translating them into straight
+ g-code anyhow
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (43).png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Connecting Stepper Motor to CNC Shield
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+NOTE : In the above Figure 5.5, we've connected only 2 motors (X&Y).
+\end_layout
+
+\begin_layout Standard
+To send commands to your CNC/2-axis stepper motor driver board you need
+ a g-code sender to send command and instruction.
+ Universal Gcode Sender is a Java based GRBL compatible cross platform G-Code
+ sender.
+ Use this program to run a GRBL controlled CNC machine.
+ Once downloaded, connect the UNO board USB to your computer and take note
+ of the COM port it is connected to.
+\end_layout
+
+\begin_layout Section
+Required Software 
+\end_layout
+
+\begin_layout Enumerate
+Laser GRBL : Download Laser GRBL from this website: http://lasergrbl.com/en/
+ Install the software Laser GRBL.
+\end_layout
+
+\begin_layout Enumerate
+Grbl : Grbl hex is available in the GitHub site: https://github.com/gnea/grbl/rel
+eases Download the zip format and extract the bundle.
+ Inside you will find a list of build files, header files and examples for
+ Arduino.
+ Burn the Grbl code into Arduino Uno Using Xloader.
+ Download Xloader from this link: http://russemotto.com/xloader/ 
+\end_layout
+
+\begin_layout Enumerate
+Universal G Code Sender Universal G Code Sender is available in the following
+ GitHub link: https://github.com/winder/Universal-G-Code-Sender Download
+ and extract the zip file.
+\end_layout
+
+\begin_layout Subsection
+Working Procedure on Laser GRBL
+\end_layout
+
+\begin_layout Enumerate
+Right click on the Laser GRBL and Open the software.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (31).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Opening the Laser GRBL Software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then, Click on File and select Open to Import the image to the Software
+ for Engraving.
+\end_layout
+
+\begin_layout Enumerate
+Browse and Select the Grayscale (for better tracing) image which you want
+ to engrave on Cardboard.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (32).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Browsing the Image on Laser GRBL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+After selecting the image click on Open to Import the image to software.
+\end_layout
+
+\begin_layout Enumerate
+After importing image change the Parameters for better tracing (based on
+ image).
+ Select Smooth (HQ Bicubic) from parameters.
+ Enable B&W for better tracing and Line Preview for Visualize the image.
+ Choose Line to Line Tracing from conversion Tool.
+ For Direction select Horizontal.
+ Increase the Quality of line based on tracing image.
+ Then, click on Next.
+\end_layout
+
+\begin_layout Enumerate
+In Target image, Change the Engraving speed 1000 mm/min and Jogging Speed
+ 4000 mm/min.
+ Change Laser ON M3 and Laser OFF M5.
+ Change S-MIN to 0 and S-MAX to 255.
+ Change the image Size and Position as per requirement (Max 100x100mm).
+ After changing settings click on Create to Generate Gcode for traced image.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (33).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Changing settings in Target image.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+After the generation of Gcode the traced image is turned into the Red lines
+ (Gcode points) as show in the figure below.
+\end_layout
+
+\begin_layout Enumerate
+Then, Connecting Laser GRBL with Arduino.
+ For that choose the correct Com Port.
+\end_layout
+
+\begin_layout Enumerate
+After choosing the Com Port, Connect the Laser GRBL with Arduino by Click
+ on Connect Symbol next to Baud rate.
+\end_layout
+
+\begin_layout Enumerate
+After connecting with Arduino, Bring the Axes to Home position by Jogging
+ using the Green arrows in bottom corner of left hand side.
+ For jogging you can adjust the speed and pulse rate by increasing the level.
+ After reached the home position, reconnect the arduino to reset home position.
+ Click on Run Symbol to run the program from home position.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (35).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Running the program.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now we can see the step by step Gcode sending to the machine from Laser
+ GRBL in left hand side column.
+ Projected time of the project will display at bottom of left hand side.
+ To STOP the machine for emergency, Click on Stop button at bottom of right
+ hand side.
+ Then, click on Run button to resume the engraving.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (36).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Real time Visualization of Engraving.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Real time Laser Engraving images on 3mm Cardboard.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Pictures/Screenshots/Screenshot (38).png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample product with 3mm Cardboard – Lord Saraswati.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+After completion of laser engraving on cardboard, remove the cardboard from
+ workplace.
+\end_layout
+
+\begin_layout Subsection
+Flow diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Desktop/Untitled.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+flow diagram of laser engraver
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Laser Engraved Sample
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lenovo/Desktop/projectphoto/f6a0f4c0-a6a5-4bd0-8b48-de2a0277e0d3.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+engraved sample
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+APPLICATIONS AND FUTURE SCOPE
+\end_layout
+
+\begin_layout Section
+Applications of laser engraver :
+\end_layout
+
+\begin_layout Enumerate
+Laser engraving is especially popular in jewellery manufacture (particularly
+ engraving of gold and silver) it be used to create works of art.
+ 
+\end_layout
+
+\begin_layout Enumerate
+There are also many industrial uses (e.g.
+ adding information onto parts and components).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Engraving with lasers can be used for traditional marking purposes such
+ as serial numbers and logos but has the advantage of depth which makes
+ it popular for making stamps, dies and moulds.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Laser engraving is extensively used in industries such as aerospace, automotive,
+ electronics, medical and also in semi-conductor manufacturing.
+ Laser engraving is also heavily used for aesthetic personalisation of items
+ such as plaques, tankards, trophies, medals and similar items.
+ In addition, laser engraving is often used for the creation of barcodes
+ and tracking labels, which has some similarities to marking processes.
+\end_layout
+
+\begin_layout Subsection
+Advantage :
+\end_layout
+
+\begin_layout Itemize
+Low weight 
+\end_layout
+
+\begin_layout Itemize
+Easily transportable 
+\end_layout
+
+\begin_layout Itemize
+Low cost 
+\end_layout
+
+\begin_layout Itemize
+Easy setup 
+\end_layout
+
+\begin_layout Subsection
+Disadvantage
+\end_layout
+
+\begin_layout Itemize
+Available for only soft material like polystyrene, but difficult-to-cut
+ advanced materials like ceramics, composites and superalloys.
+ 
+\end_layout
+
+\begin_layout Itemize
+Works only with D.C supply
+\end_layout
+
+\begin_layout Section
+Future scope
+\end_layout
+
+\begin_layout Standard
+Recent researchers on laser beam cutting and engraving of thin sheets lasers
+ are quite suitable due to their characteristics such as short pulse duration,
+ low mean beam power, and high laser beam intensity.
+ Only few researchers have used scientific methods under the umbrella of
+ design of experiments for a planned study of laser beam cutting process.
+ experimental study includes a lot of undesired factors which affect the
+ performance variations and finally lead to unreliable results.
+ Also, the quality laser cutting of highly reflective and thermally conductive
+ materials like aluminium and its alloys have not been studied systematically
+ to fulfill the demand of complex shape generation in these highly demanding
+ materials.
+ As complex shapes and profile require straight as well as curved cut profile
+ of difficult-to-cut materials, aluminium rod it may be considered for future
+ investigations.
+ The experimental investigations may also be carried out for thick sheets
+ of aluminium alloys.
+\end_layout
+
+\begin_layout Standard
+The newly developed difficult-to-cut advanced materials like ceramics, composite
+s and superalloys, will be of high demand in industries but only few researchers
+ have applied scientific 3 approach to improve the laser cutting quality
+ of these materials.
+ Different hybrid approach methodologies applied in this research may be
+ applied for modeling and optimization of other difficult-to-cut materials.
+ Micromachining of difficult-to-cut material will also be an area of research
+ in future.
+ 
+\end_layout
+
+\begin_layout Chapter
+RESULT AND CONCLUSION
+\end_layout
+
+\begin_layout Section
+Result
+\end_layout
+
+\begin_layout Standard
+The concept was converted into reality along with all its components.
+ In this project, we have designed and assembled 2-Axis laser engraver with
+ at low-price.
+ the advent of the laser engraver is so simple and compact that it has made
+ itself affordable.
+ also we made sure that it can have variable work-space incase if needed.
+ the key point was proficient that was to produce a laboratory modelled
+ Laser cutting and engraving machine.
+ the result seems for the better quality cutting and engraving.
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Making a portable machine brings a flexibility to do work and also decrease
+ the cost of making prototypes, optimised the cost of the laser cutting
+ and engraving machine with the capacity of 5W, 450nm wavelength make it
+ useable for cutting paper, polystyrene and thin sheets.
+ In conclusion the accuracy of the designed and fabrication of CNC based
+ laser engraver body parts assembling has succeded to achieve the objectives
+ of this project.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Design and fabrication of portable laser cutting and engraving machine (December
+ 2017) Authors: P.
+ Jamaleshwara Kumar, A.
+ Siva Sai Tarun, M.Gowtham
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "2"
+key "key-1"
+literal "false"
+
+\end_inset
+
+Li L (2000) The advances and characteristics of high-power diode laser materials
+ processing.
+ Optics and Lasers in Engineering 34 (4):231-253 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "3"
+key "key-3"
+literal "false"
+
+\end_inset
+
+ ARDIUNO programming- by Ryan Turner Embedded C/C++.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "4"
+key "key-4"
+literal "false"
+
+\end_inset
+
+Design of machine elements-by V.B BhandariFundamentals of mechanical engineering
+ design.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "5"
+key "key-5"
+literal "false"
+
+\end_inset
+
+Leone C, Lopresto V, De Iorio I (2009) Wood engraving by Q-switched diode-pumped
+ frequency-doubled Nd: YAG green laser.
+ Optics and Lasers in Engineering 47 (1):161- 168.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "6"
+key "key-6"
+literal "false"
+
+\end_inset
+
+ Ion J (2005) Laser processing of engineering materials: principles, procedure
+ and industrial application.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "7"
+key "key-7"
+literal "false"
+
+\end_inset
+
+Caristan CL (2004) Laser cutting guide for manufacturing.
+ Society of manufacturing engineers
+\end_layout
+
+\begin_layout Left Footer
+Department of Electronics & Communication.
+ Jain college of Engineering , Belagavi.
+\end_layout
+
+\end_body
+\end_document
