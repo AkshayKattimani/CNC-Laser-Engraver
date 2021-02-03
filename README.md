@@ -21,9 +21,7 @@ Grbl includes full acceleration management with look ahead. That means the contr
 * Lead Developer [_2011 - Current_]: Sungeun(Sonny) K. Jeon, Ph.D. (USA) aka @chamnit
 * Lead Developer [_2009 - 2011_]: Simen Svale Skogsrud (Norway). aka The Originator/Creator/Pioneer/Father of Grbl.
 ***
-### Official Supporters of the Grbl CNC Project
-![Official Supporters](https://github.com/gnea/gnea-Media/blob/master/Contributors.png?raw=true)
-***
+
 _**Master Branch:**_
 * [Grbl v0.9j Atmega328p 16mhz 115200baud with generic defaults](http://bit.ly/1I8Ey4S) _(2016-03-17)_
   - **IMPORTANT INFO WHEN UPGRADING TO GRBL v0.9 :** 
