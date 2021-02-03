@@ -7,7 +7,7 @@
  5. Power Supply : 12v
  6. V-slot and wheels : 2060  and 2020 V slot aluminum 
 
-![GitHub Logo](https://github.com/gnea/gnea-Media/blob/master/Grbl%20Logo/Grbl%20Logo%20250px.png?raw=true)
+![GitHub Logo](https://github.com/AkshayKattimani/CNC-Laser-Engraver/blob/main/LaserEngraverFrame.jpeg)
 ***
 ### Grbl v1.1 has been released [here](https://github.com/gnea/grbl/releases)!
 ### Notice: This site will be phased out and moved to the new one!
